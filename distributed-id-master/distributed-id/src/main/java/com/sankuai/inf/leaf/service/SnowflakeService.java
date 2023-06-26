@@ -12,6 +12,7 @@ public class SnowflakeService {
     private Logger logger = LoggerFactory.getLogger(SnowflakeService.class);
 
     private IDGen idGen;
+
     public SnowflakeService(String zkpath,int port) throws InitException {
             Preconditions.checkNotNull(zkpath,"zookeeper path can not be null");
             Preconditions.checkNotNull(port,"zookeeper port  can not be null");
@@ -26,4 +27,5 @@ public class SnowflakeService {
     public Result getId(String key) {
         return idGen.get(key);
     }
+
 }
