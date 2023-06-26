@@ -16,9 +16,8 @@ import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.zookeeper.CreateMode;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -30,7 +29,7 @@ public class SnowflakeZookeeperHolder {
     private static final Logger LOGGER = LoggerFactory.getLogger(SnowflakeZookeeperHolder.class);
     private String zk_AddressNode = null;//保存自身的key  ip:port-000000001
     private String listenAddress = null;//保存自身的key ip:port
-    private int workerID;
+    private int workerID = 0;
     private static final String PREFIX_ZK_PATH = "/snowflake/" + PropertyFactory.leafname;
     private static final String PROP_PATH = System.getProperty("java.io.tmpdir") + File.separator + PropertyFactory.leafname + "/leafconf/{port}/workerID.properties";
     private static final String PATH_FOREVER = PREFIX_ZK_PATH + "/forever";//保存所有数据持久的节点
@@ -166,7 +165,7 @@ public class SnowflakeZookeeperHolder {
     /**
      * 构建需要上传的数据
      *
-     * @return
+     * @return 返回字符串
      */
     private String buildData() throws JsonProcessingException {
         Endpoint endpoint = new Endpoint(ip, port, System.currentTimeMillis());
@@ -187,13 +186,23 @@ public class SnowflakeZookeeperHolder {
      * @param workerID
      */
     private void updateLocalWorkerID(int workerID) {
+
         File leafConfFile = new File(PROP_PATH.replace("{port}", port));
+
         boolean exists = leafConfFile.exists();
         LOGGER.info("file exists status is {}", exists);
         if (exists) {
             try {
-                FileUtils.writeStringToFile(leafConfFile, "workerID=" + workerID, String.valueOf(false));
                 LOGGER.info("update file cache workerID is {}", workerID);
+
+                // 方法不可靠,总是报字节码IO异常,改为下面的原生版,问题解决
+                //FileUtils.writeStringToFile(leafConfFile, "workerID=" + workerID ,String.valueOf(false));
+
+                FileOutputStream fos = new FileOutputStream(leafConfFile);
+                OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
+                osw.write("workerID=" + workerID);
+                //LOGGER.info("update file cache workerID is {}", workerID);
+
             } catch (IOException e) {
                 LOGGER.error("update file cache error ", e);
             }
@@ -204,14 +213,17 @@ public class SnowflakeZookeeperHolder {
                 LOGGER.info("init local file cache create parent dis status is {}, worker id is {}", mkdirs, workerID);
                 if (mkdirs) {
                     if (leafConfFile.createNewFile()) {
-                        FileUtils.writeStringToFile(leafConfFile, "workerID=" + workerID, String.valueOf(false));
                         LOGGER.info("local file cache workerID is {}", workerID);
+                        // FileUtils.writeStringToFile(leafConfFile, "workerID=" + workerID, String.valueOf(false));
+                        FileOutputStream fos = new FileOutputStream(leafConfFile);
+                        OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
+                        osw.write("workerID=" + workerID);
                     }
                 } else {
                     LOGGER.warn("create parent dir error===");
                 }
             } catch (IOException e) {
-                LOGGER.warn("craete workerID conf file error", e);
+                LOGGER.warn("create workerID conf file error", e);
             }
         }
     }
