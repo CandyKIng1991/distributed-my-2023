@@ -29,4 +29,6 @@ TG（telegram电报）分享：https://t.me/yunpanshare
 [Apache ShardingSphere](https://shardingsphere.apache.org/)
 
 
-### 下来
+### 解决问题
+
+#### 1.源码的com/sankuai/inf/leaf/snowflake/SnowflakeZookeeperHolder.java中存在FileUtils.writeStringToFile的IO异常,改为可靠的基础代码写法.
