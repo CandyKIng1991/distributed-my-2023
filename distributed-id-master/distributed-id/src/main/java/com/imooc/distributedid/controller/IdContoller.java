@@ -34,9 +34,6 @@ public class IdContoller {
 
     @GetMapping("/snowflake")
     public Result snowflake() {
-
-
-
         return snowflakeService.getId("imooc").setDescription(snowflakeService.getId("imooc").getId(),"雪花算法");
     }
 }
