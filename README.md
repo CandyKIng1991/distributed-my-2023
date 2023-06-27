@@ -9,7 +9,7 @@
 
 ##### 官方文档
 
-(中文文档)[https://github.com/Meituan-Dianping/Leaf/blob/feature/spring-boot-starter/README_CN.md]
+[中文文档](https://github.com/Meituan-Dianping/Leaf/blob/feature/spring-boot-starter/README_CN.md)
 
 
 
