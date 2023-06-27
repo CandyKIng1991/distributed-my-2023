@@ -7,8 +7,9 @@
 软件架构说明
 
 
-##### 更多教程、软件等精彩资源 尽在
-TG（telegram电报）分享：https://t.me/yunpanshare
+##### 官方文档
+
+(中文文档)[https://github.com/Meituan-Dianping/Leaf/blob/feature/spring-boot-starter/README_CN.md]
 
 
 
