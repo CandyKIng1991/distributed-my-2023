@@ -157,5 +157,8 @@ http://127.0.0.1:8081/user/info/得到结果不一样.
 | 2 |  IDEA  | 开发工具            |
 
 
+## 集群环境
+
+* 对redis相关的application.yml进行配置,而不是配置session.
 
 
