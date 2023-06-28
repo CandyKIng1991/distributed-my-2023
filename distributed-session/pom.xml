@@ -6,7 +6,16 @@
 
     <groupId>com.imooc</groupId>
     <artifactId>distributed-session</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>session-01</module>
+        <module>session2</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,20 +29,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-data-redis</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>java-jwt</artifactId>
-            <version>3.10.3</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.auth0</groupId>-->
+            <!--<artifactId>java-jwt</artifactId>-->
+            <!--<version>3.10.3</version>-->
+        <!--</dependency>-->
     </dependencies>
 </project>
