@@ -7,4 +7,6 @@
            icon="" textColor="" backgroundColor=""/>
      <tree path="/distributed-session/session-04" title="jwt"/>
      <tree path="/distributed-session/session-05" title="token统一处理"/>
+     <tree path="/distributed-session" title="2.分布式Session"/>
+     <tree path="/distributed-id-master" title="1.分布式ID"/>
  </trees>
