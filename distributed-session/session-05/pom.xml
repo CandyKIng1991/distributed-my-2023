@@ -8,17 +8,19 @@
     </parent>
 
     <groupId>com.grandfather.www</groupId>
-    <artifactId>session-03</artifactId>
+    <artifactId>session-05</artifactId>
     <packaging>jar</packaging>
 
-    <name>session-05</name>
+    <name>session-04</name>
     <url>http://maven.apache.org</url>
+    <description>jwt的模块设置</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -26,10 +28,10 @@
             <scope>test</scope>
         </dependency>
 
-
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.10.3</version>
         </dependency>
 
     </dependencies>

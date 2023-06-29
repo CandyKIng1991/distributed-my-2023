@@ -13,6 +13,7 @@
         <module>session-02</module>
         <module>session-03</module>
         <module>session-04</module>
+        <module>session-05</module>
     </modules>
 
     <properties>
