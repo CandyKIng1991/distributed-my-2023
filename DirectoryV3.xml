@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <trees>
-     <tree path="/distributed-session/pom.xml" title="模块session"/>
-     <tree path="/distributed-session/session-01" title="传统session"/>
-     <tree path="/distributed-session/session-02" title="redis+spring_session"/>
-     <tree path="/distributed-session/session-03" title="redis+token" extension="" presentableText="" tooltipTitle=""
-           icon="" textColor="" backgroundColor=""/>
-     <tree path="/distributed-session/session-04" title="jwt"/>
-     <tree path="/distributed-session/session-05" title="token统一处理"/>
-     <tree path="/distributed-session" title="2.分布式Session"/>
-     <tree path="/distributed-id-master" title="1.分布式ID"/>
- </trees>
+<trees>
+    <tree path="/distributed-session/pom.xml" title="模块session"/>
+    <tree path="/distributed-session/session-01" title="传统session"/>
+    <tree path="/distributed-session/session-02" title="redis+spring_session"/>
+    <tree path="/distributed-session/session-03" title="redis+token" extension="" presentableText="" tooltipTitle=""
+          icon="" textColor="" backgroundColor=""/>
+    <tree path="/distributed-session/session-04" title="jwt"/>
+    <tree path="/distributed-session/session-05" title="token统一处理"/>
+    <tree path="/distributed-job" title="3.分布式任务调度"/>
+    <tree path="/distributed-session" title="2.分布式Session"/>
+    <tree path="/distributed-id-master" title="1.分布式ID"/>
+</trees>
