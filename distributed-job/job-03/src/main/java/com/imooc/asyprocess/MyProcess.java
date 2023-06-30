@@ -13,7 +13,10 @@ import org.springframework.stereotype.Component;
 public class MyProcess {
 
     /**
-     * 慎用，推荐MQ
+     * 各自执行各自的,互不干扰的异步处理方式
+     * <p>
+     * <p>
+     * 慎用，推荐MQ,分布式中间件异步处理,代替这种方式
      */
     @Async
     public void doProcess1() {

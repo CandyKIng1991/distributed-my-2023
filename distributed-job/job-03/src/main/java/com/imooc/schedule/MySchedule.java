@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 
-
 /**
  * 多线程执行任务调度
  */
@@ -21,7 +20,7 @@ public class MySchedule {
 
 
     /**
-     * 模拟两个执行的线程
+     * 每三秒执行一次业务,不管上个任务是否执行结束
      */
     @Scheduled(fixedRate = 3000)
     public void process1() {
