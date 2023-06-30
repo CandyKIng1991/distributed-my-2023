@@ -10,6 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>job-01</module>
+        <module>job-02</module>
+        <module>job-03</module>
     </modules>
 
     <parent>
