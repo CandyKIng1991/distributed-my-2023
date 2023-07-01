@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 8082
 xxl:
   job:
     admin:
@@ -7,10 +7,16 @@ xxl:
     # 必须配置字段
     accessToken: default_token
     executor:
-      appname: my-job-01
-      logpath: ./tmp/
+      appname: my-job-xxl-job
+      logpath: /tmp/
+      # 必须配置字段
+      address:
+      # 必须配置字段
+      ip:
       # 必须配置字段
       port: 8888
+      # 必须配置字段
+      logretentiondays: 30
 spring:
   active: zhangsan
 
