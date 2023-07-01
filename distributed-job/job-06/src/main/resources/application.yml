@@ -9,8 +9,6 @@ xxl:
     executor:
       appname: my-job-01
       logpath: ./tmp/
-      # 必须配置字段
-      port: 8888
 spring:
   active: zhangsan
 

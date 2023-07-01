@@ -35,8 +35,9 @@ public class XxlJobConfig {
     @Value("${xxl.job.accessToken}")
     private String accessToken;
 
-    @Value("${xxl.job.executor.port}")
-    private int port;
+     // 不配置就会自动配置
+    //@Value("${xxl.job.executor.port}")
+    //private int port;
 
     @Bean
     public XxlJobSpringExecutor xxlJobExecutor() {
@@ -47,7 +48,7 @@ public class XxlJobConfig {
         xxlJobSpringExecutor.setLogPath(logPath);
 
         xxlJobSpringExecutor.setAccessToken(accessToken);
-        xxlJobSpringExecutor.setPort(port);
+        //xxlJobSpringExecutor.setPort(port);
         return xxlJobSpringExecutor;
     }
 }

@@ -14,8 +14,9 @@
         <module>job-03</module>
         <module>job-04</module>
         <module>job-05</module>
-        <module>job-12</module>
         <module>job-06</module>
+        <module>job-12</module>
+
     </modules>
 
     <parent>
