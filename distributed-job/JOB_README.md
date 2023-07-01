@@ -1,4 +1,6 @@
 
+[TOC]
+
 # 任务调度
 
 
@@ -46,13 +48,45 @@
 
 
 
-### XXL-JOB核心配置属性
+
+### Scheduled核心配置属性
 
 
 序号| 名称| 描述 |
 |----|-----|-----|
 | 1  |  @EnableScheduling |是否开启 schedule ,加在类上,作用就是当前类<br>加在@SpringBootApplication 上,就是整个项目生效      |
 | 2  |  @Scheduled |fixedDelay 默认是int型<br>fixedDelayString 说明等号后要是字符型数据<br>默认项目启动就打印 initialDelay 不在启动的时候打印 -----延迟启动<br>initialDelay 延迟启动<br>fixedDelay 固定延迟，时间间隔是前次任务的结束到下次任务的开始<br>fixedRate 时间间隔是前次任务和下次任务的开始<br>crontab  https://cron.qqe2.com/ 这个网址可以解析表达式,输入条件自动生成表达式      |
+
+
+
+
+## XXL-JOB
+
+
+
+* XXL-JOB是大众点评员工徐雪里于2015年发布的分布式任务调度平台
+
+
+* 官网地址: [https://www.xuxueli.com/xxl-job/](https://www.xuxueli.com/xxl-job/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-package com.imooc.distributedjob;
+package com.imooc.job;
 
 import com.google.gson.Gson;
 import com.xxl.job.core.biz.model.ReturnT;
