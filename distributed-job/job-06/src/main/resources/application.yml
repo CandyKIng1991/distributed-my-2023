@@ -4,9 +4,21 @@ xxl:
   job:
     admin:
       addresses: http://localhost:8080/xxl-job-admin/
+    # 必须配置字段
+    accessToken: default_token
     executor:
-      appname: my-job-xxl-job-executor-sample
+      appname: my-job-xxl-job
       logpath: /tmp/
+      # 必须配置字段
+      address:
+      # 必须配置字段
+      ip:
+      # 必须配置字段
+      port: 8888
+      # 必须配置字段
+      logretentiondays: 30
 spring:
   active: zhangsan
 
+logging:
+  config: classpath:logback.xml

@@ -24,6 +24,15 @@ public class MyXxlJob {
             e.printStackTrace();
         }
 
+        XxlJobLogger.log("myXxlJobHandler execute...");
+        return ReturnT.SUCCESS;
+    }
+
+
+    @XxlJob("myXxlJobShardingVo")
+    public ReturnT<String> shardingVo(String param) {
+        log.info("myXxlJobHandler execute.......START");
+
         //轮询 流量均摊，推荐
         //故障转移 流量到第一台，查日志方便
 
@@ -32,15 +41,15 @@ public class MyXxlJob {
         ShardingUtil.ShardingVO shardingVo = ShardingUtil.getShardingVo();
 
         //分片，必须掌握
-//        List<Integer> list = Arrays.asList(1, 2, 3, 4);
-//        for (Integer i : list) {
-//            if (i % shardingVo.getTotal() == shardingVo.getIndex()) {
-//                log.info("myXxlJobHandler execute...user={}. shardingVo={}",
-//                        i, new Gson().toJson(shardingVo));
-//            }
-//        }
+        List<Integer> list = Arrays.asList(1, 2, 3, 4);
+        for (Integer i : list) {
+            if (i % shardingVo.getTotal() == shardingVo.getIndex()) {
+                log.info("myXxlJobHandler execute...user={}. shardingVo={}",
+                        i, new Gson().toJson(shardingVo));
+            }
+        }
 
-        XxlJobLogger.log("myXxlJobHandler execute...");
+        XxlJobLogger.log("myXxlJobHandler execute... END");
         return ReturnT.SUCCESS;
     }
 }
