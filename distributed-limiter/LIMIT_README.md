@@ -72,12 +72,23 @@
 
 ![img_11.png](img_11.png)
 
+## 客户端查看
 
+![img_12.png](img_12.png)
 
+* 修改流控
 
+![img_13.png](img_13.png)
 
+* QPS(每秒查询速率) 设置为1
 
+![img_14.png](img_14.png)
 
+![img_15.png](img_15.png)
+
+* 再看实时监控,就有数据了.(点的多数据就更明显)
+
+![img_16.png](img_16.png)
 
 
 
