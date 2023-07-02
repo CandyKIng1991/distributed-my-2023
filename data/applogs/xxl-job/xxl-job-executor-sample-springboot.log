@@ -1,0 +1,280 @@
+2023-07-02 11:20:50,483 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 11576 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-02 11:20:50,487 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-02 11:20:51,233 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:20:51,235 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:20:51,391 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-02 11:20:51,397 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:20:51,397 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-02 11:20:51,397 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-02 11:20:51,468 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-02 11:20:51,468 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 955 ms
+2023-07-02 11:20:51,656 INFO [main] c.a.c.s.SentinelWebAutoConfiguration [SentinelWebAutoConfiguration.java : 80] [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-02 11:20:51,722 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-02 11:20:51,792 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-02 11:20:52,472 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:20:52,522 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-02 11:20:53,051 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-02 11:20:53,059 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-02 11:20:53,079 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-02 11:20:53,137 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 3.588 seconds (JVM running for 4.581)
+2023-07-02 11:22:21,595 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-02 11:22:27,030 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 9072 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-02 11:22:27,032 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-02 11:22:27,968 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:22:27,969 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:22:28,133 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-02 11:22:28,139 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:22:28,140 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-02 11:22:28,140 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-02 11:22:28,218 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-02 11:22:28,218 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 1163 ms
+2023-07-02 11:22:28,411 INFO [main] c.a.c.s.SentinelWebAutoConfiguration [SentinelWebAutoConfiguration.java : 80] [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-02 11:22:28,481 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-02 11:22:28,540 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-02 11:22:29,310 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:22:29,394 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-02 11:22:30,267 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-02 11:22:30,275 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-02 11:22:30,294 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-02 11:22:30,350 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 4.246 seconds (JVM running for 5.358)
+2023-07-02 11:22:32,216 INFO [http-nio-8083-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02 11:22:32,216 INFO [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-02 11:22:32,222 INFO [http-nio-8083-exec-5] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
+2023-07-02 11:22:45,295 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 1
+2023-07-02 11:23:14,579 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 2
+2023-07-02 11:23:15,413 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 3
+2023-07-02 11:23:15,581 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 4
+2023-07-02 11:23:15,740 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 5
+2023-07-02 11:23:15,868 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 6
+2023-07-02 11:23:16,002 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 7
+2023-07-02 11:23:16,137 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 8
+2023-07-02 11:23:16,264 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 9
+2023-07-02 11:23:16,395 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 10
+2023-07-02 11:23:16,520 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 11
+2023-07-02 11:23:16,677 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 12
+2023-07-02 11:23:16,824 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 13
+2023-07-02 11:25:12,554 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 14
+2023-07-02 11:25:12,559 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 15
+2023-07-02 11:25:12,561 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 18
+2023-07-02 11:25:12,561 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 17
+2023-07-02 11:25:12,561 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 16
+2023-07-02 11:25:12,562 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 23
+2023-07-02 11:25:12,561 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 19
+2023-07-02 11:25:12,562 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 20
+2023-07-02 11:25:12,562 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 22
+2023-07-02 11:25:12,562 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 21
+2023-07-02 11:25:12,564 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 24
+2023-07-02 11:25:12,565 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 25
+2023-07-02 11:25:12,565 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 26
+2023-07-02 11:25:12,566 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 28
+2023-07-02 11:25:12,566 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 29
+2023-07-02 11:25:12,566 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 30
+2023-07-02 11:25:12,566 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 27
+2023-07-02 11:25:12,567 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 33
+2023-07-02 11:25:12,567 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 32
+2023-07-02 11:25:12,567 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 31
+2023-07-02 11:25:12,567 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 34
+2023-07-02 11:25:12,569 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 35
+2023-07-02 11:25:12,570 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 36
+2023-07-02 11:25:12,570 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 37
+2023-07-02 11:25:12,570 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 39
+2023-07-02 11:25:12,570 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 38
+2023-07-02 11:25:12,570 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 40
+2023-07-02 11:25:12,571 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 41
+2023-07-02 11:25:12,571 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 42
+2023-07-02 11:25:12,572 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 43
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 45
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 47
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 49
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 48
+2023-07-02 11:25:12,573 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 44
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 52
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 53
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 50
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 46
+2023-07-02 11:25:12,574 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 51
+2023-07-02 11:25:12,576 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 56
+2023-07-02 11:25:12,576 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 55
+2023-07-02 11:25:12,576 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 57
+2023-07-02 11:25:12,576 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 54
+2023-07-02 11:25:12,576 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 58
+2023-07-02 11:25:12,577 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 61
+2023-07-02 11:25:12,577 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 59
+2023-07-02 11:25:12,577 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 62
+2023-07-02 11:25:12,578 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 63
+2023-07-02 11:25:12,577 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 60
+2023-07-02 11:25:12,579 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 64
+2023-07-02 11:25:12,580 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 66
+2023-07-02 11:25:12,580 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 67
+2023-07-02 11:25:12,580 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 68
+2023-07-02 11:25:12,580 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 69
+2023-07-02 11:25:12,580 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 65
+2023-07-02 11:25:12,581 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 70
+2023-07-02 11:25:12,581 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 71
+2023-07-02 11:25:12,581 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 72
+2023-07-02 11:25:12,581 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 73
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 76
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 77
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 74
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 78
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 75
+2023-07-02 11:25:12,583 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 79
+2023-07-02 11:25:12,584 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 80
+2023-07-02 11:25:12,584 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 81
+2023-07-02 11:25:12,585 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 82
+2023-07-02 11:25:12,586 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 86
+2023-07-02 11:25:12,586 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 84
+2023-07-02 11:25:12,585 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 83
+2023-07-02 11:25:12,586 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 85
+2023-07-02 11:25:12,586 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 87
+2023-07-02 11:25:12,587 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 88
+2023-07-02 11:25:12,587 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 89
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 90
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 92
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 93
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 94
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 95
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 96
+2023-07-02 11:25:12,588 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 91
+2023-07-02 11:25:12,589 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 97
+2023-07-02 11:25:12,589 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 98
+2023-07-02 11:25:12,589 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 99
+2023-07-02 11:25:12,590 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 100
+2023-07-02 11:25:12,590 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 101
+2023-07-02 11:25:12,591 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 102
+2023-07-02 11:25:12,592 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 103
+2023-07-02 11:25:12,592 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 105
+2023-07-02 11:25:12,592 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 106
+2023-07-02 11:25:12,592 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 101] 104
+2023-07-02 11:25:12,593 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 108
+2023-07-02 11:25:12,593 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 107
+2023-07-02 11:25:12,593 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 110
+2023-07-02 11:25:12,593 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 111
+2023-07-02 11:25:12,593 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 109
+2023-07-02 11:25:12,594 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 112
+2023-07-02 11:25:12,594 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 113
+2023-07-02 11:31:19,551 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-02 11:31:28,318 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 11404 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-02 11:31:28,320 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-02 11:31:29,034 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:31:29,036 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 335] Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-02 11:31:29,196 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-02 11:31:29,202 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:31:29,203 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-02 11:31:29,203 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-02 11:31:29,275 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-02 11:31:29,276 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 932 ms
+2023-07-02 11:31:29,472 INFO [main] c.a.c.s.SentinelWebAutoConfiguration [SentinelWebAutoConfiguration.java : 80] [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-02 11:31:29,532 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-02 11:31:29,589 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-02 11:31:30,240 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-02 11:31:30,291 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-02 11:31:30,840 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-02 11:31:30,849 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-02 11:31:30,867 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-02 11:31:30,929 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 3.445 seconds (JVM running for 4.693)
+2023-07-02 11:31:37,824 INFO [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-02 11:31:37,824 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-02 11:31:37,828 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 4 ms
+2023-07-02 11:31:48,279 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,300 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,306 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,305 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,306 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,308 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,308 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 39] 恭喜你，抢到了！
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,310 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,311 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,311 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,311 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,313 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,313 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,313 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,314 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,314 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,314 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,313 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,314 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,316 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,316 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,316 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,316 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,317 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,317 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,317 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,318 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,318 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,318 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,317 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,319 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,320 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,320 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,320 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,321 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,322 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,322 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,323 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,323 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,323 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,324 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,324 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,324 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,325 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,325 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,325 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,325 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,325 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,326 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,326 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,326 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,326 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,327 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,327 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,329 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,329 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,329 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,329 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,329 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,330 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,331 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,332 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,332 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,332 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,332 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,332 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,333 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,334 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,334 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,335 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,335 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,335 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 11:31:55,336 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 41] 不好意思，你手慢了，没抢到
+2023-07-02 17:41:03,255 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
