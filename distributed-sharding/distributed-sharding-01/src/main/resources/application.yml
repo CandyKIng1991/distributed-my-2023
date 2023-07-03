@@ -4,10 +4,20 @@ server:
 spring:
   datasource:
     # mysql5 url: jdbc:mysql://localhost:3306/ds0
-    url: jdbc:mysql://localhost:3306/ds0?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/ds0?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
 
   jpa:
     show-sql: true
+  #去除springboot启动的banner
+  main:
+    banner-mode: off
+logging:
+  level:
+    #banner下面的日志
+    org.springframework: OFF
+    #去除banner下面的日志
+    root: off
+
