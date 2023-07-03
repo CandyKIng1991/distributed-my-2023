@@ -115,7 +115,10 @@
 
 * 改换启动distributed-limiter/sentinel-dashboard-1.8.0-zookeeper.jar
 
+**绑定规则**
 
+* 通过配置代码,蓝zookeeperconfig的配置在模块limiter-06
+* 配置好后可以重启,查看sentinal的配置还是在
 
 
 
