@@ -12,6 +12,7 @@
         <module>limiter-01</module>
         <module>limiter-02</module>
         <module>limiter-03</module>
+        <module>limiter-04</module>
     </modules>
 
     <parent>

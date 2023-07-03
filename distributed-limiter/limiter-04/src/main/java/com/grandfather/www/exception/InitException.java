@@ -1,4 +1,4 @@
-package com.sankuai.inf.leaf.exception;
+package com.grandfather.www.exception;
 
 public class InitException extends Exception{
     public InitException(String msg) {
