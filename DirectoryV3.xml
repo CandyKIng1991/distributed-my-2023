@@ -11,4 +11,5 @@
     <tree path="/distributed-session" title="2.分布式Session"/>
     <tree path="/distributed-id-master" title="1.分布式ID"/>
     <tree path="/distributed-limiter" title="4.分布式限流"/>
+    <tree path="/distributed-limiter/sentinal_limi_rule.bat" title="为模块06以后测试用"/>
 </trees>

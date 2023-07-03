@@ -1,0 +1,1 @@
+java -Dserver.port=8080 -Dcsp.sentinel.dashboard.server=localhost:8080 -Dproject.name=sentinel-dashboard -Ddatasource.provider=zookeeper -Ddatasource.provider.zookeeper.server-addr=localhost:2181 -jar ./sentinel-dashboard-1.8.0-zookeeper.jar

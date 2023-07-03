@@ -579,3 +579,51 @@
 2023-07-03 13:59:28.063 INFO Receiving rule change (type: flow): [{"clusterConfig":{"fallbackToLocalWhenFail":true,"sampleCount":10,"strategy":0,"thresholdType":0,"windowIntervalMs":1000},"clusterMode":false,"controlBehavior":0,"count":1.0,"grade":1,"limitApp":"default","maxQueueingTimeMs":500,"resource":"/sentinel/","strategy":0,"warmUpPeriodSec":10}]
 2023-07-03 13:59:28.063 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=/sentinel/, limitApp=default, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=null}]
 2023-07-03 13:59:28.063 INFO [FlowRuleManager] Flow rules received: {/sentinel/=[FlowRule{resource=/sentinel/, limitApp=default, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@63b1ce2}]}
+2023-07-03 16:12:03.151 WARNING [ZookeeperDataSource] WARN: initial config is null, you may have to check your data source
+2023-07-03 16:12:03.154 INFO [FlowRuleManager] Flow rules loaded: {}
+2023-07-03 16:12:03.158 INFO App name resolved from property csp.sentinel.app.name: limiter
+2023-07-03 16:12:03.159 INFO [SentinelConfig] Application type resolved: 0
+2023-07-03 16:12:03.160 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2023-07-03 16:12:03.161 INFO [FlowRuleManager] Registering new property to flow rule manager
+2023-07-03 16:12:03.161 INFO [FlowRuleManager] Flow rules loaded: {}
+2023-07-03 16:13:04.040 INFO Add child <sentinel_default_context> to node <machine-root>
+2023-07-03 16:13:04.042 INFO Add child <sentinel_spring_web_context> to node <machine-root>
+2023-07-03 16:13:04.053 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2023-07-03 16:13:04.056 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2023-07-03 16:13:04.060 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2023-07-03 16:13:04.062 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2023-07-03 16:13:04.066 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc
+2023-07-03 16:13:04.071 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc
+2023-07-03 16:13:04.079 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2023-07-03 16:13:04.080 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2023-07-03 16:13:04.121 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2023-07-03 16:13:04.121 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2023-07-03 16:13:04.131 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [Tuple2{r1=localhost, r2=8080}]
+2023-07-03 16:13:04.131 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2023-07-03 16:13:04.133 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2023-07-03 16:13:04.134 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2023-07-03 16:13:04.135 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2023-07-03 16:13:04.136 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2023-07-03 16:13:04.144 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.client.init.DefaultClusterClientInitFunc with order 0
+2023-07-03 16:13:04.147 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2023-07-03 16:13:04.149 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2023-07-03 16:13:04.162 INFO [TokenServiceProvider] Global token service resolved: com.alibaba.csp.sentinel.cluster.flow.DefaultTokenService
+2023-07-03 16:13:04.162 INFO [DefaultClusterServerInitFunc] Default entity codec and processors registered
+2023-07-03 16:13:04.162 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.cluster.server.init.DefaultClusterServerInitFunc with order 2147483647
+2023-07-03 16:13:04.165 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilder
+2023-07-03 16:13:04.179 INFO Add child </sentinel/> to node <sentinel_spring_web_context>
+2023-07-03 16:13:04.182 INFO [AuthorityRuleManager] Load authority rules: {}
+2023-07-03 16:13:04.190 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2023-07-03 16:13:04.195 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2023-07-03 16:13:04.196 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2023-07-03 16:13:04.198 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2023-07-03 16:13:04.201 INFO [MetricExtensionProvider] No existing MetricExtension found
+2023-07-03 16:13:04.237 INFO Add child <LimiterService.process> to node </sentinel/>
+2023-07-03 16:13:05.176 INFO [MetricWriter] Removing metric file: D:\workspace____java\distributed-my-2023\.\log\limiter-metrics.log.2023-07-03.7
+2023-07-03 16:13:05.178 INFO [MetricWriter] Removing metric index file: D:\workspace____java\distributed-my-2023\.\log\limiter-metrics.log.2023-07-03.7.idx
+2023-07-03 16:13:05.180 INFO [MetricWriter] New metric file created: ./log/\limiter-metrics.log.2023-07-03.13
+2023-07-03 16:13:05.181 INFO [MetricWriter] New metric index file created: ./log/\limiter-metrics.log.2023-07-03.13.idx
+2023-07-03 16:13:34.456 INFO [ZookeeperDataSource] New property value received for (localhost:2181, /limiter/sentinel-flow-rules): null
+2023-07-03 16:13:34.561 INFO [ZookeeperDataSource] New property value received for (localhost:2181, /limiter/sentinel-flow-rules): [FlowRule{resource=/sentinel/, limitApp=default, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=null}]
+2023-07-03 16:13:34.561 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=/sentinel/, limitApp=default, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=null}]
+2023-07-03 16:13:34.563 INFO [FlowRuleManager] Flow rules received: {/sentinel/=[FlowRule{resource=/sentinel/, limitApp=default, grade=1, count=1.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=ClusterFlowConfig{flowId=null, thresholdType=0, fallbackToLocalWhenFail=true, strategy=0, sampleCount=10, windowIntervalMs=1000}, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@12f71ef0}]}

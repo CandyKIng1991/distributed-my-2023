@@ -103,8 +103,17 @@
 
 ![img_18.png](img_18.png)
 
+* 存在公共的zookeeper nacos平台中,达到持久化的目的
+
 [处理方案](https://github.com/alibaba/Sentinel/wiki/%E5%9C%A8%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E4%B8%AD%E4%BD%BF%E7%94%A8-Sentinel)
 
+* 控制台和zookeeper连接还不支持,因此要用第三方的插件
+
+| 序号 | 文档                         |
+|----|----------------------------|
+| 1  | [分布式限流文档](../doc/分布式限流.md) |
+
+* 改换启动distributed-limiter/sentinel-dashboard-1.8.0-zookeeper.jar
 
 
 
