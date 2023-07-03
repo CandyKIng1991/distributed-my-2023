@@ -30,7 +30,7 @@ public class AppTest
     @Test
     public void insert() {
         OrderEntity orderEntity = new OrderEntity();
-        orderEntity.setUserId(new Random().nextInt(999));
+        orderEntity.setUserId(new Random().nextInt(1999));
         orderDao.save(orderEntity);
     }
 
