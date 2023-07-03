@@ -1,0 +1,11 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: limiter
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      log:
+        dir: ./log/
