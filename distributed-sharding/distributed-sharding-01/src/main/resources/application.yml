@@ -12,12 +12,12 @@ spring:
   jpa:
     show-sql: true
   #去除springboot启动的banner
-  main:
-    banner-mode: off
+#  main:
+#    banner-mode: off
 logging:
   level:
     #banner下面的日志
-    org.springframework: OFF
+    org.springframework: info
     #去除banner下面的日志
-    root: off
+    root: info
 

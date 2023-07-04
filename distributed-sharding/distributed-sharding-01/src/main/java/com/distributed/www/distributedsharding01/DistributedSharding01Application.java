@@ -3,6 +3,9 @@ package com.distributed.www.distributedsharding01;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author MrLiu
+ */
 @SpringBootApplication
 public class DistributedSharding01Application {
 
