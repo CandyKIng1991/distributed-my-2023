@@ -21,7 +21,7 @@
 | 3  | 分布式任务调度       | [分布式任务调度](./distributed-job)           | [分布式任务调度](./distributed-job/JOB_README.md)                                        |
 | 4  | 分布式限流         | [分布式限流](./distributed-limiter)         | [分布式限流](./distributed-limiter/LIMIT_README.md)<br>[相关文章](./doc/ApacheBench的安装.md) |
 | 5  | 分库分表          | [分库分表](./distributed-sharding)         | [分库分表](./distributed-sharding/SHARDING_READ.md)                                   |
-| 6  | 分布式事务         | [分布式事务](./distributed-seata)           |                                                                                   |
+| 6  | 分布式事务         | [分布式事务](./distributed-seata)           | [分布式事务](./distributed-seata/SEATEA_README.md)                                     |
 
 ### 地址
 

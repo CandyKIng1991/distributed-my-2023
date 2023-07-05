@@ -13,4 +13,5 @@
     <tree path="/distributed-limiter" title="4.分布式限流"/>
     <tree path="/distributed-limiter/sentinal_limi_rule.bat" title="为模块06以后测试用"/>
     <tree path="/distributed-sharding" title="5.分库分表"/>
+    <tree path="/distributed-seata" title="6.分布式事务"/>
 </trees>
