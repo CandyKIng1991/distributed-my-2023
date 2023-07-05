@@ -26,7 +26,6 @@
 | 1  | shardingsphere(之间教shardingjdbc) | 优势不需要运维成本,直接跟java打交道(小公司,无运维人员使用)      | [官网](https://shardingsphere.apache.org/) |
 | 2  | mycat                           | 需要运维,和对mycat十分了解的情况 (有运维的DBA人员的可以选择这个) | [官网](http://www.mycat.org.cn/)           |
 
-
 ## 文档阅读
 
 * 首页先在右边切换语言为中文,然后找到遗留,查看到所有的历史版本.
@@ -59,7 +58,87 @@
 
 * 方便扩展,为某些功能提供了扩展.
 
+* 在数据库资源不够的时候,才会采用分库分表.
 
+* 读写分离和主从数据库一样
+
+* 应用程序同时连接主库和从库,如果有数据新增修改和删除操作,会对主库进行操作,新增一条数据会增加到主库中去,读取的时候会从从库当中读取.
+*
+
+主库和从库的同步数据,每次数据更改,主库都会把这些数据记录写在二进制文件当中去,从库通过IO线程,把主库的这部分日志复制到自己的日志(
+中继日志)当中去,从库通过SQL线程读取中继日志,重放到自己的数据库当中去.(都是数据库自己做的事情)
+
+## Docker容器配置文件
+
+[OrderController.java](distributed-sharding-02%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgrandfather%2Fwww%2FOrderController.java)
+[OrderService.java](distributed-sharding-02%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgrandfather%2Fwww%2FOrderService.java)
+
+* 一定要在master端更新数据,slave只是查看.
+
+## 主从配置
+
+[本地配置windows](./windows的主从配置.html)
+
+### 主从的坑位
+
+* 主数据库如果在连接从数据库之前不是空的mysql,那么在主库删除一个库的时候,从库就会无法使用了.
+* Slave_IO_Running会变为No
+
+![img_3.png](img_3.png)
+
+
+#### 解决方式
+
+* 关闭从库(从库中运行)
+
+```
+
+    stop slave
+
+```
+
+* 修改配置参数
+* 查看主库的master_log_pos属性的值,每次主库重大该改变这个值就会改变
+
+```
+
+   show master status;
+
+```
+
+![img_4.png](img_4.png)
+
+* 运行修改从库的命令(在从库中)
+
+```
+
+   CHANGE MASTER TO master_host = '127.0.0.1',
+    master_port = 3306,
+    master_user = 'follow',
+    master_password = 'follow',
+    master_log_file = 'bin.000070',
+    master_log_pos = 2777;
+
+```
+
+
+* 重启打开从库(在从库中)
+
+```
+
+   start slave
+
+```
+
+* 查看是否变为正常
+
+```
+
+show slave status;
+
+```
+
+![img_5.png](img_5.png)
 
 
 

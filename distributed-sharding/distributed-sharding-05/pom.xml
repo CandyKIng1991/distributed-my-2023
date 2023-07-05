@@ -8,11 +8,12 @@
     </parent>
 
     <groupId>com.grandfather.www</groupId>
-    <artifactId>distributed-sharding-04</artifactId>
+    <artifactId>distributed-sharding-05</artifactId>
     <packaging>jar</packaging>
 
-    <name>distributed-sharding-04</name>
+    <name>distributed-sharding-05</name>
     <url>http://maven.apache.org</url>
+    <description>windows的主从配置</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
