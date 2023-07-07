@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.grandfather.www</groupId>
         <artifactId>distributed-seata</artifactId>
@@ -13,10 +14,10 @@
     <name>seata-02</name>
     <url>http://maven.apache.org</url>
     <modules>
-        <module>seata-order</module>
-        <module>seata-product</module>
+        <module>seata-order-02</module>
+        <module>seata-product-02</module>
     </modules>
-    <description>老的实现方式,没有Seata的时候</description>
+    <description>使用seata框架的方式,访问:http://localhost:8085/create?count=5 不扣库存</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
