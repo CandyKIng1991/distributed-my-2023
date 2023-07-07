@@ -22,13 +22,10 @@ import org.springframework.integration.zookeeper.lock.ZookeeperLockRegistry;
  */
 @Configuration
 public class ZookeeperLockConfiguration {
-    @Bean
-    public ZookeeperLockRegistry zookeeperLockRegistry(CuratorFramework curatorFramework) {
-        return new ZookeeperLockRegistry(curatorFramework, "/locks");
-    }
+
 
     /**
-     * 连接客户端的zookeeper
+     * 创建连接客户端的zookeeper
      * <p>
      * 连接不对会报错: java.lang.IllegalStateException: Expected state [STARTED] was [LATENT]
      *
@@ -37,10 +34,16 @@ public class ZookeeperLockConfiguration {
      */
     @Bean
     public CuratorFramework curatorFramework() throws Exception {
-        CuratorFramework curatorFramework = CuratorFrameworkFactory.newClient("127.0.0.1:2181", new RetryUntilElapsed(1000, 4));
+        CuratorFramework curatorFramework = CuratorFrameworkFactory.newClient(
+                "127.0.0.1:2181", // 服务的地址,一般是zookeeper的地址
+                new RetryUntilElapsed(
+                        1000, // 以sleepMsBetweenRetries的间隔重连,直到超过maxElapsedTimeMs的时间设置
+                        4             //  重连几次,简单粗暴
+                ));
 
         // start()开始连接，没有此会报错
         curatorFramework.start();
+
         // 阻塞直到连接成功
         curatorFramework.blockUntilConnected();
 
@@ -48,5 +51,16 @@ public class ZookeeperLockConfiguration {
 
     }
 
+
+    /**
+     * 将框架注册到zookeeper当中去
+     *
+     * @param curatorFramework 连接zookeeper服务的框架
+     * @return 注册结果
+     */
+    @Bean
+    public ZookeeperLockRegistry zookeeperLockRegistry(CuratorFramework curatorFramework) {
+        return new ZookeeperLockRegistry(curatorFramework, "/locks");
+    }
 
 }

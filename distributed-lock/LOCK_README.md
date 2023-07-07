@@ -44,3 +44,34 @@
 [Spring Integration](https://static.kancloud.cn/master-wei/springboot_master-wei/2218525)
 
 * zookeeper分布式的速度比较慢,但是会有回调的反应.
+
+**Spring Integration**
+
+* 官网查找
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
+
+* 找到学习的Reference Doc.
+
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
+
+![img_7.png](img_7.png)
+
+* 最后找到的位置.(这里讲的其实不多,还是看例子)
+
+![img_8.png](img_8.png)
+
+* 官网的例子
+
+![img_9.png](img_9.png)
+
+[例子位置](https://kgithub.com/spring-projects/spring-integration#samples)
+
+![img_10.png](img_10.png)
+
+![img_11.png](img_11.png)
+
