@@ -1,0 +1,8 @@
+server:
+  port: 8087
+
+# 分布式这样配置
+spring:
+  redis:
+    redisson:
+      file: classpath:redisson.yml
