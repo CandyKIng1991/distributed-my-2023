@@ -42,3 +42,5 @@
 ## 自己研究zookeeper
 
 [Spring Integration](https://static.kancloud.cn/master-wei/springboot_master-wei/2218525)
+
+* zookeeper分布式的速度比较慢,但是会有回调的反应.
