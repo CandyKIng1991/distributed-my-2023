@@ -16,22 +16,11 @@ public class HomeController {
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt?username=admin&password=admin' target='_blank' >用户登录</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithToken?username=admin&password=admin' target='_blank' >用户登录</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt' target='_blank' >用户信息</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithToken?token=' target='_blank' >用户信息(上个接口得到的结果防止postman中测试)</a>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt2?username=admin&password=admin' target='_blank' >用户登录</a> ");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt2'  target='_blank'>用户信息</a>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt3?username=admin&password=admin' target='_blank' >用户登录</a> ");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt3'  target='_blank'>用户信息</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");
 
