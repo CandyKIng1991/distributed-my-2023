@@ -10,6 +10,9 @@ import java.util.Date;
 import static com.grandfather.www.util.LoginIntercepter.JWT_KEY;
 import static com.grandfather.www.util.LoginIntercepter.UID;
 
+/**
+ * @author MrLiu
+ */
 @RequestMapping("/user")
 @RestController
 public class TokenController {
@@ -35,7 +38,7 @@ public class TokenController {
     }
 
     /**
-     * 访问地址：<a href="http://localhost:8081/user/address">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/address?uid=10010">...</a>
      * <p>
      * <p>
      * 获取上个接口的id
@@ -50,18 +53,17 @@ public class TokenController {
     }
 
     /**
-     *
-     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt?loginUser=张三">...</a>
      * <p>
-     *
+     * <p>
      * 获取用户信息
      *
-     * @param login_user 用户token
+     * @param loginUser 用户token
      * @return 用户信息
      */
     @GetMapping("/infoWithJwt")
-    public String infoWithJwt(@RequestAttribute String login_user) {
-        return login_user;
+    public String infoWithJwt(@RequestAttribute String loginUser) {
+        return loginUser;
     }
 
 }

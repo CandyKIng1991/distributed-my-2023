@@ -5,13 +5,16 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 
+/**
+ * @author MrLiu
+ */
 @RequestMapping("/user")
 @RestController
 public class UserController {
 
 
     /**
-     * 访问地址:http://localhost:8081/user/login?username=admin&password=123456
+     * 访问地址:<a href="http://localhost:8081/user/login?username=admin&password=123456">...</a>
      *
      * @param username 用户名称
      * @param password 用户密码
@@ -29,7 +32,7 @@ public class UserController {
     }
 
     /**
-     * 访问地址: http://localhost:8081/user/info
+     * 访问地址: <a href="http://localhost:8081/user/info">...</a>
      * 为了测试是否通过session登录成功
      *
      * @param session 缓存用户数据的session

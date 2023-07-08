@@ -10,12 +10,13 @@ import com.grandfather.www.common.Result;
 import com.grandfather.www.common.Status;
 import org.springframework.web.bind.annotation.*;
 
-
 import java.util.Date;
 
 import static com.grandfather.www.util.LoginIntercepter.JWT_KEY;
-import static com.grandfather.www.util.LoginIntercepter.UID;
 
+/**
+ * @author MrLiu
+ */
 @RequestMapping("/user")
 @RestController
 public class TokenController {
@@ -57,7 +58,7 @@ public class TokenController {
 
 
     /**
-     * 访问地址：<a href="http://localhost:8081/user/loginWithJwt?username=admin&password=admin">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/loginWithJwt2?username=admin&password=admin">...</a>
      * <p>
      * <p>
      * 改造自定义模式
@@ -118,7 +119,7 @@ public class TokenController {
 
 
     /**
-     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt2">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt3">...</a>
      * <p>
      * <p>
      * 获取用户信息
