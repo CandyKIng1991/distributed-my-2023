@@ -1,3 +1,4 @@
+data/
 target/
 log/
 tmp/
@@ -25,3 +26,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+/data/
