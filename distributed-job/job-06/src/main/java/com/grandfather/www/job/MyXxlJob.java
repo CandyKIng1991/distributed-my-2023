@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author MrLiu
+ */
 @Component
 @Slf4j
 public class MyXxlJob {

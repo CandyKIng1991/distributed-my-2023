@@ -5,6 +5,9 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
+/**
+ * @author MrLiu
+ */
 @Slf4j
 public class MyQuartzJob extends QuartzJobBean {
 

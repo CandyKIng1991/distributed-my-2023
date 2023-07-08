@@ -2,16 +2,13 @@ package com.imooc.schedule;
 
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
  * 多线程执行任务调度
+ * @author MrLiu
  */
 @Slf4j
 @Component

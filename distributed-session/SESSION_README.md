@@ -173,11 +173,10 @@
 
 * token = header + payload + signature（签名）
 
-| 序号 |名称| 描述        |
-|----|---|-----------|
-| 1  |expiresAt| 过期时间      |
-| 2  |claims| 字段内容（自定义） |
-
+| 序号 | 名称        | 描述        |
+|----|-----------|-----------|
+| 1  | expiresAt | 过期时间      |
+| 2  | claims    | 字段内容（自定义） |
 
 * 将token的值放入jwt.io可以获得解码。
 
@@ -185,8 +184,21 @@
 
 * 拆开token为header和payload和signature的三部分，然后用公共的base64解密网站解密。
 
+### session-05
 
+* 除了排在第一个的接口,都需要用postman的token.
 
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
+
+* 以下代码要保持一致.
+
+![img_3.png](img_3.png)
+
+![img_4.png](img_4.png)
 
 
 

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 异步处理线程方式
+ * @author MrLiu
  */
 @Slf4j
 @Component

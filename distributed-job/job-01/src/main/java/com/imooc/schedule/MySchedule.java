@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * @author MrLiu
+ */
 @Slf4j
 @Component
 @EnableScheduling

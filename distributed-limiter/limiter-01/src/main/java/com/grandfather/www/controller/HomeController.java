@@ -5,6 +5,7 @@ package com.grandfather.www.controller;/**
  */
 
 import com.google.common.util.concurrent.RateLimiter;
+import com.grandfather.www.uitil.PortServer;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -39,7 +40,24 @@ public class HomeController {
     @ApiOperation("主页")
     public String index() {
 
-        return "恭喜你刷到了主页面";
+        StringBuilder stringBuilder = new StringBuilder();
+
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("swagger-ui.html' target='_blank' >所有接口的swagger</a>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guava' target='_blank' >拟用户获取令牌录(点开后多次F5,看后台日志)</a>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guavaOver' target='_blank' >模拟有个申请超过桶的最大容量(点开后多次F5,看后台日志)</a>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guavaSnatch' target='_blank' >抢夺资源(需要ab压测工具测试)</a>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");
+
+        return stringBuilder.toString();
 
     }
 

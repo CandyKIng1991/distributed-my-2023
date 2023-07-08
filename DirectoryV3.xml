@@ -15,4 +15,10 @@
     <tree path="/distributed-sharding" title="5.分库分表"/>
     <tree path="/distributed-seata" title="6.分布式事务"/>
     <tree path="/distributed-lock" title="7.分布式锁"/>
+    <tree path="/distributed-job/job-01" title="直接启动,什么都不需要做"/>
+    <tree path="/distributed-job/job-02" title="直接启动,什么都不做"/>
+    <tree path="/distributed-job/job-03" title="直接启动,看日志"/>
+    <tree path="/distributed-job/job-04" title="直接启动,看日志"/>
+    <tree path="/distributed-job/job-05" title="直接启动,看日志"/>
+    <tree path="/distributed-job/job-06" title="先启动xxl-job-master,在启动"/>
 </trees>

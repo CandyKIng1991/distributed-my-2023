@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 配置类
+ * @author MrLiu
  */
 @Configuration
 public class MyQuartJobConfig {

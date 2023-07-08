@@ -17,9 +17,29 @@ import static com.grandfather.www.util.LoginIntercepter.UID;
 @RestController
 public class TokenController {
 
+
+    /**
+     * 访问地址：<a href="http://localhost:8081/user/login?username=admin&password=admin">...</a>
+     * <p>
+     * 用jwt登录
+     *
+     * @param username 用户名
+     * @param password 密码
+     * @return 登录信息
+     */
+    @GetMapping("/login")
+    public String login(@RequestParam String username,
+                        @RequestParam String password) {
+        Algorithm algorithm = Algorithm.HMAC256(JWT_KEY);
+        String token = JWT.create().withIssuer("auth0")
+                .sign(algorithm);
+        return token;
+    }
+
     /**
      * 访问地址：<a href="http://localhost:8081/user/loginWithJwt?username=admin&password=admin">...</a>
      * <p>
+     * 必须用上个接口的token,不然就会报错500
      *
      * @param username 用户名
      * @param password 密码
@@ -38,14 +58,14 @@ public class TokenController {
     }
 
     /**
-     * 访问地址：<a href="http://localhost:8081/user/address?uid=10010">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/address">...</a>
      * <p>
      * <p>
      * 获取上个接口的id
      * 获取地址, token -> id
      *
-     * @param uid
-     * @return
+     * @param uid 返回这个
+     * @return 返回
      */
     @GetMapping("/address")
     public Integer address(@RequestAttribute Integer uid) {
@@ -53,7 +73,7 @@ public class TokenController {
     }
 
     /**
-     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt?loginUser=张三">...</a>
+     * 访问地址：<a href="http://localhost:8081/user/infoWithJwt">...</a>
      * <p>
      * <p>
      * 获取用户信息
@@ -62,8 +82,8 @@ public class TokenController {
      * @return 用户信息
      */
     @GetMapping("/infoWithJwt")
-    public String infoWithJwt(@RequestAttribute String loginUser) {
-        return loginUser;
+    public String infoWithJwt(@RequestAttribute String login_user) {
+        return login_user;
     }
 
 }

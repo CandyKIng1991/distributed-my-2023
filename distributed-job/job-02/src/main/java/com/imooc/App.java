@@ -9,12 +9,16 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
 /**
  * Hello world!
+ * @author MrLiu
  */
 @SpringBootApplication
 @EnableScheduling
 public class App {
 
-
+    /**
+     * 启动后什么都不做
+     * @param args 字符串
+     */
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
 

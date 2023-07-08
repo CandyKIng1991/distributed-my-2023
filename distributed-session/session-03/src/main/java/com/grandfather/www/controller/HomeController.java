@@ -19,7 +19,13 @@ public class HomeController {
         stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithToken?username=admin&password=admin' target='_blank' >用户登录</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithToken?token=' target='_blank' >用户信息(上个接口得到的结果防止postman中测试)</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithToken' target='_blank' >用户信息(上个接口得到的结果防止postman中测试)</a>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("<br/>");
+        stringBuilder.append("(上个连接格式)格式: ");
+        stringBuilder.append("<br/>");
+        stringBuilder.append(PortServer.getUrl()).append("/user/infoWithToken");
+        stringBuilder.append("token=token_084a37ce-8e8f-48a7-8c30-1eb43c213f0e(第一个接口获得)");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");

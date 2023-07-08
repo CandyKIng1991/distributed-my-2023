@@ -22,16 +22,16 @@ public class HomeController {
         stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt' target='_blank' >用户信息</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt2?username=admin&password=admin' target='_blank' >用户登录</a> ");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt2?username=admin&password=admin' target='_blank' >用户登录2</a> ");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt2'  target='_blank'>用户信息</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt2'  target='_blank'>用户信息2</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt3?username=admin&password=admin' target='_blank' >用户登录</a> ");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/loginWithJwt3?username=admin&password=admin' target='_blank' >用户登录3</a> ");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt3'  target='_blank'>用户信息</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/user/infoWithJwt3'  target='_blank'>用户信息3</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");
 

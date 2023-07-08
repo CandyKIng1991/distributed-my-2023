@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 拦截器统一处理Token
+ * @author MrLiu
  */
 @Component
 public class LoginIntercepter extends HandlerInterceptorAdapter {
