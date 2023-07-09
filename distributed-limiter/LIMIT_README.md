@@ -12,6 +12,20 @@
 
 [相关文章](../doc/ApacheBench的安装.md)
 
+## ab工具位置
+
+[位置](./limiter-01/ab-test/Apache24/bin)
+
+**测试**
+
+![img_19.png](img_19.png)
+
+```
+
+ 
+
+```
+
 ## 常见限流工具
 
 ### 漏桶算法
@@ -49,6 +63,12 @@
 | 2  | 阿里巴巴的sprinbcloud | [https://github.com/alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba)                   |
 
 * 网关限流,接口限流,
+
+#### 登录
+
+* 账号/密码: sentinel/sentinel
+
+![img_20.png](img_20.png)
 
 ### git的wiki阅读
 

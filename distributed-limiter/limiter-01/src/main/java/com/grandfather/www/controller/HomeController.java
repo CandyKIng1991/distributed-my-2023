@@ -36,13 +36,13 @@ public class HomeController {
      *
      * @return 一个提示
      */
-    @GetMapping("/index")
+    @GetMapping("/")
     @ApiOperation("主页")
     public String index() {
 
         StringBuilder stringBuilder = new StringBuilder();
 
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("swagger-ui.html' target='_blank' >所有接口的swagger</a>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/swagger-ui.html' target='_blank' >所有接口的swagger</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guava' target='_blank' >拟用户获取令牌录(点开后多次F5,看后台日志)</a>");
