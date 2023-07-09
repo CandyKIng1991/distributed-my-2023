@@ -1,15 +1,17 @@
-package com.distributed.www.distributedsharding01;/**
+package com.distributed.www.distributedsharding01.service;/**
  * @author: MrLiu
  * @createTime: 2023/07/04 9:21
  * @description: xxx
  */
 
+import com.distributed.www.distributedsharding01.bean.OrderEntity;
+import com.distributed.www.distributedsharding01.dao.OrderDao;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * @projectName: distributed-my-2023
@@ -47,4 +49,12 @@ public class OrderService {
 
     }
 
+    public boolean save() {
+        OrderEntity orderEntity = new OrderEntity();
+        orderEntity.setOrderId(System.currentTimeMillis());
+        orderEntity.setUserId(new Random().nextInt(999));
+        OrderEntity save = orderDao.save(orderEntity);
+
+        return save.getOrderId() != null;
+    }
 }

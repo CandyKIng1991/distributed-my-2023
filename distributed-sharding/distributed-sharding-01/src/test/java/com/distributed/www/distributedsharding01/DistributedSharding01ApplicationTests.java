@@ -1,5 +1,7 @@
 package com.distributed.www.distributedsharding01;
 
+import com.distributed.www.distributedsharding01.bean.OrderEntity;
+import com.distributed.www.distributedsharding01.dao.OrderDao;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -27,7 +29,11 @@ public class DistributedSharding01ApplicationTests {
         OrderEntity orderEntity = new OrderEntity();
         orderEntity.setOrderId(System.currentTimeMillis());
         orderEntity.setUserId(new Random().nextInt(999));
-        orderDao.save(orderEntity);
+        OrderEntity save = orderDao.save(orderEntity);
+
+        if (save.getOrderId()!=null) {
+
+        }
     }
 
 
