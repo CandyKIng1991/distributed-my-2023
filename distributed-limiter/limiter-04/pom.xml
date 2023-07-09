@@ -13,7 +13,7 @@
 
     <name>limiter-04</name>
     <url>http://maven.apache.org</url>
-    <description>处理限流的错误的方法</description>
+    <description>处理限流的埋点的方法</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -66,6 +66,7 @@
             <version>1.2.8</version>
             <scope>compile</scope>
         </dependency>
+
     </dependencies>
 
 

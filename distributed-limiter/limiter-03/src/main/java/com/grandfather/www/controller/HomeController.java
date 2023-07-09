@@ -4,12 +4,13 @@ package com.grandfather.www.controller;/**
  * @description: xxx
  */
 
-import com.grandfather.www.uitil.PortServer;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @projectName: distributed-my-2023
@@ -36,19 +37,7 @@ public class HomeController {
     @ApiOperation("主页")
     public String index() {
 
-        StringBuilder stringBuilder = new StringBuilder();
-
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("swagger-ui.html' target='_blank' >所有接口的swagger</a>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/sentinel' target='_blank' >工具测试(点开后,看后台日志)</a>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");
-
-        return stringBuilder.toString();
+        return "恭喜你刷到了主页面";
 
     }
 

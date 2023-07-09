@@ -5,7 +5,6 @@ import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.google.gson.Gson;
 import com.grandfather.www.common.Result;
 import com.grandfather.www.common.Status;
-import com.grandfather.www.exception.InitException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

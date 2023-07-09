@@ -1,13 +1,20 @@
 package com.grandfather.www;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+@SpringBootApplication
+public class App {
+
+    /**
+     * Sentinel使用
+     *
+     * @param args 字符串
+     */
+    public static void main(String[] args) {
+        SpringApplication.run(App.class, args);
     }
 }
