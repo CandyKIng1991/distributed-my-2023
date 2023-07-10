@@ -1,9 +1,8 @@
 package com.grandfather.www;
 
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import com.grandfather.www.bean.OrderEntity;
+import com.grandfather.www.dao.OrderDao;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.shardingsphere.infra.hint.HintManager;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

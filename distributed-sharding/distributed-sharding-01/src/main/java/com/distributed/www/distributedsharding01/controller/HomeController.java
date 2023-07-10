@@ -48,11 +48,7 @@ public class HomeController {
         stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/findAll' target='_blank' >获取所有订单</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guavaOver' target='_blank' >模拟有个申请超过桶的最大容量(点开后多次F5,看后台日志)</a>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<br/>");
-        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/guavaSnatch' target='_blank' >抢夺资源(需要ab压测工具测试)</a>");
-        stringBuilder.append("<br/>");
+        stringBuilder.append("<a href='").append(PortServer.getUrl()).append("/save' target='_blank' >保存</a>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<br/>");
         stringBuilder.append("<h1>欢迎爸爸,登录成功</h1>");
