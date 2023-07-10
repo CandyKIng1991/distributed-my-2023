@@ -1,171 +1,233 @@
-2023-07-08 16:59:18,870 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 15844 (D:\workspace____java\distributed-my-2023\distributed-job\job-06\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
-2023-07-08 16:59:18,874 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2023-07-08 16:59:19,835 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
-2023-07-08 16:59:19,843 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
-2023-07-08 16:59:19,851 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2023-07-08 16:59:19,852 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
-2023-07-08 16:59:19,955 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2023-07-08 16:59:19,956 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 850 ms
-2023-07-08 16:59:20,005 INFO [main] c.g.www.config.XxlJobConfig [XxlJobConfig.java : 44] >>>>>>>>>>> xxl-job config init.
-2023-07-08 16:59:20,139 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-08 16:59:20,307 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 168] >>>>>>>>>>> xxl-job register jobhandler success, name:myXxlJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2b214b94[class com.grandfather.www.job.MyXxlJob#execute]
-2023-07-08 16:59:20,309 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 168] >>>>>>>>>>> xxl-job register jobhandler success, name:myXxlJobHandlerTest, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@23e44287[class com.grandfather.www.job.MyXxlJob#executeTest]
-2023-07-08 16:59:20,310 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 168] >>>>>>>>>>> xxl-job register jobhandler success, name:myXxlJobHandlerShardingVo, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2b8d084[class com.grandfather.www.job.MyXxlJob#executeShardingVo]
-2023-07-08 16:59:20,427 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
-2023-07-08 16:59:20,461 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
-2023-07-08 16:59:20,472 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 1.94 seconds (JVM running for 3.137)
-2023-07-08 16:59:21,238 INFO [Thread-8] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 86] >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
-2023-07-08 16:59:23,301 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 139] Connection refused: connect
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:613)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1233)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
-	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:95)
-	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:750)
-2023-07-08 16:59:23,302 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='my-job-01', registryValue='http://172.27.0.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://localhost:8080/xxl-job-admin/api/registry, content=null]
-2023-07-08 16:59:55,348 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 139] Connection refused: connect
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:613)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1233)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
-	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:95)
-	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:750)
-2023-07-08 16:59:55,348 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='my-job-01', registryValue='http://172.27.0.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://localhost:8080/xxl-job-admin/api/registry, content=null]
-2023-07-08 16:59:59,854 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-08 16:59:59,854 INFO [Thread-8] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 96] >>>>>>>>>>> xxl-job remoting server stop.
-2023-07-08 17:00:01,912 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 139] Connection refused: connect
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:613)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1233)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
-	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:95)
-	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
-	at java.lang.Thread.run(Thread.java:750)
-2023-07-08 17:00:01,913 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 90] >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='my-job-01', registryValue='http://172.27.0.1:9999/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://localhost:8080/xxl-job-admin/api/registryRemove, content=null]
-2023-07-08 17:00:01,913 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2023-07-08 17:00:01,914 INFO [SpringContextShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 125] >>>>>>>>>>> xxl-job remoting server destroy success.
-2023-07-08 17:00:01,914 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 97] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2023-07-08 17:00:01,915 INFO [Thread-7] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 127] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
-2023-07-08 17:00:24,086 INFO [main] com.imooc.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 8628 (D:\workspace____java\distributed-my-2023\distributed-job\job-12\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
-2023-07-08 17:00:24,090 INFO [main] com.imooc.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
-2023-07-08 17:00:25,083 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8082 (http)
-2023-07-08 17:00:25,093 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8082"]
-2023-07-08 17:00:25,094 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
-2023-07-08 17:00:25,094 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
-2023-07-08 17:00:25,170 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
-2023-07-08 17:00:25,170 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 868 ms
-2023-07-08 17:00:25,232 INFO [main] com.imooc.config.XxlJobConfig [XxlJobConfig.java : 46] >>>>>>>>>>> xxl-job config init.
-2023-07-08 17:00:25,338 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-08 17:00:25,551 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 168] >>>>>>>>>>> xxl-job register jobhandler success, name:myXxlJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@48b22fd4[class com.imooc.job.MyXxlJob#execute]
-2023-07-08 17:00:25,553 INFO [main] c.x.job.core.executor.XxlJobExecutor [XxlJobExecutor.java : 168] >>>>>>>>>>> xxl-job register jobhandler success, name:myXxlJobShardingVo, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@2bac9ba[class com.imooc.job.MyXxlJob#shardingVo]
-2023-07-08 17:00:25,663 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8082"]
-2023-07-08 17:00:25,696 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8082 (http) with context path ''
-2023-07-08 17:00:25,711 INFO [main] com.imooc.App [StartupInfoLogger.java : 61] Started App in 2.003 seconds (JVM running for 3.152)
-2023-07-08 17:00:26,537 INFO [Thread-9] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 86] >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 8888
-2023-07-08 17:00:28,586 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 139] Connection refused: connect
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:613)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1233)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
-	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:95)
-	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
-	at java.lang.Thread.run(Thread.java:750)
-2023-07-08 17:00:28,587 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 54] >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='my-job-xxl-job', registryValue='http://172.27.0.1:8888/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://localhost:8080/xxl-job-admin/api/registry, content=null]
-2023-07-08 17:00:35,273 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-08 17:00:35,273 INFO [Thread-9] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 96] >>>>>>>>>>> xxl-job remoting server stop.
-2023-07-08 17:00:37,310 ERROR [xxl-job, executor ExecutorRegistryThread] c.x.job.core.util.XxlJobRemotingUtil [XxlJobRemotingUtil.java : 139] Connection refused: connect
-java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:613)
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
-	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
-	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
-	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1233)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1167)
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1061)
-	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:995)
-	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:95)
-	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
-	at java.lang.Thread.run(Thread.java:750)
-2023-07-08 17:00:37,311 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 90] >>>>>>>>>>> xxl-job registry-remove fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='my-job-xxl-job', registryValue='http://172.27.0.1:8888/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Connection refused: connect), for url : http://localhost:8080/xxl-job-admin/api/registryRemove, content=null]
-2023-07-08 17:00:37,311 INFO [xxl-job, executor ExecutorRegistryThread] c.x.j.c.t.ExecutorRegistryThread [ExecutorRegistryThread.java : 105] >>>>>>>>>>> xxl-job, executor registry thread destory.
-2023-07-08 17:00:37,311 INFO [SpringContextShutdownHook] com.xxl.job.core.server.EmbedServer [EmbedServer.java : 125] >>>>>>>>>>> xxl-job remoting server destroy success.
-2023-07-08 17:00:37,311 INFO [xxl-job, executor JobLogFileCleanThread] c.x.j.c.thread.JobLogFileCleanThread [JobLogFileCleanThread.java : 99] >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destory.
-2023-07-08 17:00:37,312 INFO [xxl-job, executor TriggerCallbackThread] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 97] >>>>>>>>>>> xxl-job, executor callback thread destory.
-2023-07-08 17:00:37,313 INFO [Thread-8] c.x.j.c.thread.TriggerCallbackThread [TriggerCallbackThread.java : 127] >>>>>>>>>>> xxl-job, executor retry callback thread destory.
+2023-07-09 20:44:32,671 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 16656 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-09 20:44:32,675 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-09 20:44:33,567 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-09 20:44:33,575 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:44:33,575 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-09 20:44:33,576 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-09 20:44:33,649 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-09 20:44:33,649 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 935 ms
+2023-07-09 20:44:33,945 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-09 20:44:33,996 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:44:34,089 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:44:34,105 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-09 20:44:34,106 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-09 20:44:34,118 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-09 20:44:34,141 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-09 20:44:34,220 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 1.947 seconds (JVM running for 3.099)
+2023-07-09 20:45:04,828 INFO [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 20:45:04,829 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-09 20:45:04,835 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 6 ms
+2023-07-09 20:45:56,204 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:46:01,706 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 8184 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-09 20:46:01,709 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-09 20:46:02,508 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-09 20:46:02,514 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:46:02,515 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-09 20:46:02,515 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-09 20:46:02,576 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-09 20:46:02,576 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 824 ms
+2023-07-09 20:46:02,819 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-09 20:46:02,872 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:46:02,950 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:46:02,966 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-09 20:46:02,968 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-09 20:46:02,977 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-09 20:46:02,996 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-09 20:46:03,063 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 1.726 seconds (JVM running for 2.838)
+2023-07-09 20:46:09,024 INFO [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 20:46:09,024 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-09 20:46:09,028 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 3 ms
+2023-07-09 20:46:40,320 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:46:49,725 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 9300 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-09 20:46:49,728 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-09 20:46:50,783 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-09 20:46:50,795 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:46:50,796 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-09 20:46:50,796 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-09 20:46:50,917 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-09 20:46:50,917 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 1156 ms
+2023-07-09 20:46:51,372 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-09 20:46:51,445 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:46:51,579 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:46:51,611 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-09 20:46:51,613 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-09 20:46:51,632 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-09 20:46:51,673 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-09 20:46:51,772 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 2.446 seconds (JVM running for 4.114)
+2023-07-09 20:47:00,518 INFO [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 20:47:00,519 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-09 20:47:00,523 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 4 ms
+2023-07-09 20:48:04,341 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:48:13,989 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 55] Starting App on LAPTOP-T8C2RLQF with PID 8432 (D:\workspace____java\distributed-my-2023\distributed-limiter\limiter-01\target\classes started by MrLiu in D:\workspace____java\distributed-my-2023)
+2023-07-09 20:48:13,993 INFO [main] com.grandfather.www.App [SpringApplication.java : 651] No active profile set, falling back to default profiles: default
+2023-07-09 20:48:14,910 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 108] Tomcat initialized with port(s): 8083 (http)
+2023-07-09 20:48:14,918 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Initializing ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:48:14,918 INFO [main] o.a.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2023-07-09 20:48:14,918 INFO [main] o.a.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-07-09 20:48:14,987 INFO [main] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2023-07-09 20:48:14,989 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java : 285] Root WebApplicationContext: initialization completed in 956 ms
+2023-07-09 20:48:15,328 INFO [main] s.d.s.w.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-07-09 20:48:15,389 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 181] Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 20:48:15,477 INFO [main] o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java : 173] Starting ProtocolHandler ["http-nio-8083"]
+2023-07-09 20:48:15,496 INFO [main] o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java : 220] Tomcat started on port(s): 8083 (http) with context path ''
+2023-07-09 20:48:15,497 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2023-07-09 20:48:15,508 INFO [main] s.d.s.w.p.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2023-07-09 20:48:15,532 INFO [main] s.d.s.w.s.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2023-07-09 20:48:15,610 INFO [main] com.grandfather.www.App [StartupInfoLogger.java : 61] Started App in 2.042 seconds (JVM running for 3.506)
+2023-07-09 20:48:24,170 INFO [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 20:48:24,170 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 525] Initializing Servlet 'dispatcherServlet'
+2023-07-09 20:48:24,174 INFO [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet [FrameworkServlet.java : 547] Completed initialization in 4 ms
+2023-07-09 20:48:39,718 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 77] 0.0
+2023-07-09 20:48:40,214 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 78] 0.489984
+2023-07-09 20:48:40,710 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 79] 0.494735
+2023-07-09 20:48:41,209 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 80] 0.498892
+2023-07-09 20:49:02,829 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {1} 次
+2023-07-09 20:49:13,967 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {2} 次
+2023-07-09 20:49:14,524 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {3} 次
+2023-07-09 20:49:15,005 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {4} 次
+2023-07-09 20:49:15,275 INFO [http-nio-8083-exec-8] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {5} 次
+2023-07-09 20:49:15,419 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {6} 次
+2023-07-09 20:49:15,546 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {7} 次
+2023-07-09 20:49:15,674 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {8} 次
+2023-07-09 20:49:15,775 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {9} 次
+2023-07-09 20:49:15,903 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {10} 次
+2023-07-09 20:49:16,033 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {11} 次
+2023-07-09 20:49:16,175 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 119] 访问 : {12} 次
+2023-07-09 20:49:25,497 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:26,998 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 101] 1.499375
+2023-07-09 20:49:27,497 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 102] 0.499367
+2023-07-09 20:49:28,011 INFO [http-nio-8083-exec-3] c.g.www.controller.HomeController [HomeController.java : 103] 0.499559
+2023-07-09 20:49:29,427 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:30,927 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 101] 1.49948
+2023-07-09 20:49:31,435 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 102] 0.499746
+2023-07-09 20:49:31,927 INFO [http-nio-8083-exec-6] c.g.www.controller.HomeController [HomeController.java : 103] 0.491779
+2023-07-09 20:49:31,932 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:33,432 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 101] 1.499464
+2023-07-09 20:49:33,932 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 102] 0.499227
+2023-07-09 20:49:34,432 INFO [http-nio-8083-exec-9] c.g.www.controller.HomeController [HomeController.java : 103] 0.499455
+2023-07-09 20:49:34,434 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:35,945 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 101] 1.499591
+2023-07-09 20:49:36,435 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 102] 0.489136
+2023-07-09 20:49:36,940 INFO [http-nio-8083-exec-10] c.g.www.controller.HomeController [HomeController.java : 103] 0.499549
+2023-07-09 20:49:36,943 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:38,445 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 101] 1.499576
+2023-07-09 20:49:38,944 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 102] 0.498323
+2023-07-09 20:49:39,443 INFO [http-nio-8083-exec-1] c.g.www.controller.HomeController [HomeController.java : 103] 0.499208
+2023-07-09 20:49:39,446 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:40,953 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 101] 1.499521
+2023-07-09 20:49:41,446 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 102] 0.492653
+2023-07-09 20:49:41,945 INFO [http-nio-8083-exec-2] c.g.www.controller.HomeController [HomeController.java : 103] 0.499125
+2023-07-09 20:49:41,948 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:43,449 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 101] 1.499172
+2023-07-09 20:49:43,948 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 102] 0.498699
+2023-07-09 20:49:44,448 INFO [http-nio-8083-exec-4] c.g.www.controller.HomeController [HomeController.java : 103] 0.499058
+2023-07-09 20:49:44,452 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:45,952 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 101] 1.499281
+2023-07-09 20:49:46,467 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 102] 0.500278
+2023-07-09 20:49:46,948 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:49:46,953 INFO [http-nio-8083-exec-7] c.g.www.controller.HomeController [HomeController.java : 103] 0.48457
+2023-07-09 20:49:46,957 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 100] 0.0
+2023-07-09 20:49:48,457 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 101] 1.499472
+2023-07-09 20:49:48,956 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 102] 0.499343
+2023-07-09 20:49:49,466 INFO [http-nio-8083-exec-5] c.g.www.controller.HomeController [HomeController.java : 103] 0.500379
+2023-07-09 20:50:35,519 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,521 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,521 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,521 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,521 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,521 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,523 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,524 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,523 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,524 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,524 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,524 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 42] 恭喜你，抢到了！
+2023-07-09 20:50:35,525 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,525 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,527 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,529 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,529 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,529 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,531 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,531 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,529 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,531 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,530 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,530 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,532 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,532 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,533 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,533 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,533 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,534 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,534 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,534 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,534 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,535 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,535 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,536 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,536 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,536 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,537 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,536 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,537 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,537 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,537 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,535 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,537 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,538 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,539 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,539 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,539 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,540 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,541 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,541 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,541 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,542 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,541 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,541 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,542 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,542 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,543 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,543 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,542 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,543 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,543 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,543 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,544 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,545 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,545 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,545 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,545 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,545 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,546 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,547 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,549 INFO [http-nio-8083-exec-9] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-5] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,549 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-6] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,549 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,548 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-10] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-4] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-7] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-1] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-2] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-8] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:50:35,551 INFO [http-nio-8083-exec-3] c.g.www.controller.LimiterController [LimiterController.java : 44] 不好意思，你手慢了，没抢到
+2023-07-09 20:53:30,726 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 218] Shutting down ExecutorService 'applicationTaskExecutor'
